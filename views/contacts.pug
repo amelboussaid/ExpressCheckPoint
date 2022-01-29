@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+  title BELKISSA 
+  link(rel='stylesheet' href='stylesheets/style.css')
+  link(href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css')
+body 
+  header
+    .wrapper
+      h1
+        | BELKISSA
+        span.color .
+      nav
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/services') Our Services
+          li
+            a(href='/contacts') Contact us
+
+      .container
+  form(action='index.js')
+    label(for='fname') First Name
+    input#fname(type='text' name='firstname' placeholder='Your name..')
+    label(for='lname') Last Name
+    input#lname(type='text' name='lastname' placeholder='Your last name..')
+    label(for='country') Country
+    select#country(name='country')
+      option(value='Tunisia') Tunisia 
+      option(value='Libya') Libya
+      option(value='Algerie') Algerie
+    label(for='subject') Subject
+    textarea#subject(name='subject' placeholder='Write something..' style='height:200px')
+    input(type='submit' value='Submit')
+
