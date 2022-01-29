@@ -7,6 +7,7 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 app.use(express.static('public'));
 
+//qsdqsd
 /* Web application availability */
 const checkDate = function (req, res, next) {
     date = new Date();
